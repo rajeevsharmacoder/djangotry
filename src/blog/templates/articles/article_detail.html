@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<a href="../">Back</a>
+	{% if object.active %}
+		<h1>{{ object.title }}</h1>
+		<p>{{ object.content }}</p>
+		<a href="./update/">Update?</a> <a href="./delete/">Delete?</a>
+	{% else %}
+		<h1>Article is no longer Active</h1>
+	{% endif %}
+	
+
+{% endblock %}

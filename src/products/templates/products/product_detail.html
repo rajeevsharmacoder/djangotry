@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<a href="../">Back</a>
+	<!-- <h1>In App Template: {{ object.title }}</h1>
+	<p>{% if object.description != None and object.description != '' %}{{ object.description }}{% else %}Description coming soon{% endif %}</p>
+	<p>$ {{ object.price }}</p>
+	<p>{{ object.summary }}</p>
+	<p>Starred: {% if object.featured %}Yes{% else %}No{% endif %}</p> -->
+
+	<h1>{{ object.title }}</h1>
+	<p>{{ object.description }}</p>
+	<p>{{ object.price }}</p>
+	<p>{{ object.summary }}</p>
+	<p>{% if object.featured %}Featured{% endif %}</p>
+	<a href="./update/">Update?</a> <a href="./delete/">Delete?</a>
+{% endblock %}
