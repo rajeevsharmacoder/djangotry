@@ -1,0 +1,2 @@
+# djangotry
+Practice of django
